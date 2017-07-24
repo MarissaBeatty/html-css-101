@@ -1,0 +1,59 @@
+/* starter */
+
+
+
+
+/* my CSS */
+
+/*defaults*/
+
+/*fonts: font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif; */
+
+body {
+  max-width: 100%;
+  background: papayaWhip;
+  font-size: 16px;
+}
+
+header {
+  background-image: url("imgs/phone-in-hand-3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  height: 600px;
+  border-top: 10px solid #42f4bf;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 3rem;
+}
+
+h3 {
+
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+color: white;
+font-size: 2rem;
+}
+
+/*specifics*/
+
+header p {
+  color: white;
+  width: 400px;
+  font-size: 1.3rem;
+}
+
+h1 span {
+  color: #42f4bf;
+
+}
