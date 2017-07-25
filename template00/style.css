@@ -1,7 +1,3 @@
-/* starter */
-
-
-
 
 /* my CSS */
 
@@ -49,14 +45,54 @@ video {
   border-radius: 5%;
 }
 
+/*flexbox row, no justify or align */
+.purchaseLinks, .emailSignup {
+  display: flex;
+  flex-direction: row;
+}
+
+/*flexbox refactoring */
+header a, .benefits, .reviewText, .socialIcons, .socialIcon, footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe, .reviewerImgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subText {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.purchaseLink, .benefit, .reviewer, .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /*specifics*/
 
 .headerText {
   width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   margin-left: 200px;
   margin-top: 100px;
 }
@@ -72,17 +108,8 @@ h1 span {
   font-size: 3.5rem;
 }
 
-.purchaseLinks {
-  display: flex;
-  flex-direction: row;
-}
-
 .purchaseLink {
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 header a {
@@ -93,9 +120,6 @@ header a {
   margin: 10px;
   border-radius: 75%;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header a:hover {
@@ -103,18 +127,10 @@ header a:hover {
 }
 
 .benefits {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   margin-top: 60px;
 }
 
 .benefit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 20%;
   padding: 3%;
   text-align: center;
@@ -130,23 +146,11 @@ header a:hover {
 
 .subscribe {
   background-color: lightGrey;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   height: 450px;
-
 }
 
 .subText {
-  display: flex;
-  flex-direction: column;
   width: 35%;
-}
-
-.emailSignup {
-  display: flex;
-  flex-direction: row;
 }
 
 .signupText {
@@ -176,16 +180,6 @@ header a:hover {
 
 .reviews {
   height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.reviewText {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .quote {
@@ -194,20 +188,12 @@ header a:hover {
 
 .reviewer {
   width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 50px;
 }
 
 .reviewerImgs {
   margin: 2px;
   margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .reviewerImgs img {
@@ -223,18 +209,7 @@ header a:hover {
 
 .contact {
   height: 300;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 30px;
-}
-
-.socialIcons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .socialIcon {
@@ -242,9 +217,6 @@ header a:hover {
   height: 30px;
   background-color: lightGrey;
   border-radius: 75%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 5px;
 }
 
@@ -260,9 +232,6 @@ header a:hover {
 footer {
   height: 150px;
   background-color: lightGrey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer a {
